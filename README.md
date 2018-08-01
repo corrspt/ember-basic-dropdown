@@ -134,3 +134,11 @@ where `horizontalPosition` is a string (`"right" | "center" | "left"`), `vertica
 
 It has a handy collection of test helpers to make interaction with the component seamless in your
 test suite.
+
+### Providing and Ember Twiddle
+
+If you want to provide an [Ember Twiddle](http://www.ember-twiddle.com) with a reproduction of a problem/situation, be aware that `Ember Twiddle` won't run the hooks as `Ember CLI` does. As such you'll need to manually add the `div` for `ember-whormhole` (**at end of the template**):
+`<div id="ember-basic-dropdown-wormhole"></div>`
+
+And of course adding `ember-basic-dropdown: version` in the `addons` section of `twiddle.json`
+
